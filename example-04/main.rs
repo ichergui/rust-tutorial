@@ -8,7 +8,7 @@ fn factorial (number: u64) -> u64 {
             fact *= i;
         }
     }
-    return fact;
+    fact
 } 
 
 fn factorial_0 (number: u64) -> u64 {
@@ -19,7 +19,7 @@ fn factorial_0 (number: u64) -> u64 {
     else {
         fact *= number*factorial_0(number-1); 
     }
-    return fact;
+    fact
 }
 
 fn fibonacci (number: u64) -> u64 {
@@ -35,11 +35,11 @@ fn fibonacci (number: u64) -> u64 {
             fibo = fibonacci(number-1) + fibonacci(number-2);
         }
     }
-    return fibo;
+    fibo
 }
 
 fn sqr(x: f64) -> f64 {
-    return x * x;
+    x*x
 }
 
 fn main () {
